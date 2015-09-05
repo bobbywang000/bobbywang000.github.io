@@ -1,0 +1,78 @@
+body {
+	font-family: Helvetica, Arial, Sans-Serif;
+	background-color: #CCCCCC;
+}
+
+
+#messagesDiv {
+	background-color: #BBBBBB;
+	max-width: 95%;
+	width: 700px;
+	overflow-y: scroll;
+	max-height: 75%;
+	margin: 0 auto;
+}
+
+
+.logo{
+	height: 67px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.message{
+    border-radius: 25px;
+    background: #FFFFFF;
+    max-width: 75%;
+    display: inline-block;
+    clear: both;
+    float: left;
+	font-size: 20px;
+	border:1px solid black;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 5px;
+}
+
+.selfMessage{
+    border-radius: 25px;
+    background: #E97F31;
+    max-width: 75%;
+    display: inline-block;
+    float: right;
+    clear: both;
+	font-size: 20px;
+	border:1px solid black;
+	border-radius: 10px;
+	padding:5px;
+	margin: 5px;
+}
+
+#loadingMessage{
+	font-size: 20px;
+	margin-bottom: 5px;
+	position: fixed;
+}
+
+#messageInput{
+	font-size: 20px;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 10px;
+	margin-top: 25px;
+	max-width: 95%;
+	width: 700px;
+}
+
+
+#footer{
+	display: block;
+	text-align: center;
+	font-size: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 95%;
+}

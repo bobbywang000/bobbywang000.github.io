@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Duke 2016-2017 Men's Basketball 1v1 Simulator</title>
+
+
+		<!-- Custom CSS -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
+		<link href="css/mbb.css" rel="stylesheet">
+
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
+
+
+</head>
+
+
+<body>
+<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<h1 id="name-header">Duke 2016-2017 Men's Basketball 1v1 Simulator</h1>
+
+<div class="row">
+	<div id="left-panel" class="col-sm-4">
+		<div class="right-float">
+		<form name="Players-Left" class="right-float">
+			<select id="p-left" class="player-list" onchange="updateStats('p-left')">
+				<option value="Pick A Player">Pick A Player</option>
+				<option value="Grayson Allen">Grayson Allen</option>
+				<option value="Marques Bolden">Marques Bolden</option>
+				<option value="Javin DeLaurier">Javin DeLaurier</option>
+				<option value="Harry Giles">Harry Giles</option>
+				<option value="Frank Jackson">Frank Jackson</option>
+				<option value="Amile Jefferson">Amile Jefferson</option>
+				<option value="Matt Jones">Matt Jones</option>
+				<option value="Luke Kennard">Luke Kennard</option>
+				<option value="Jayson Tatum">Jayson Tatum</option>
+				<option value="Jack White">Jack White</option>
+			</select>
+
+		</form>
+		
+<!--  Stats panels    -->
+		<div class="stats-panel" class="right-float">
+			<img id='l-pic' class="img-rounded tst2" height="100"></img>
+			<table id="left-table">
+				<tbody>
+					<tr>
+						<td>Position</td>
+						<td id="l-pos"></td>
+					</tr>
+					<tr>
+						<td>FG Pct.</td>
+						<td id="l-fg"></td>
+					</tr>
+					<tr>
+						<td>3-PT Pct.</td>
+						<td id="l-3p"></td>
+					</tr>
+					<tr>
+						<td>Blocks</td>
+						<td id="l-b"></td>
+					</tr>
+					<tr>
+						<td>Steals</td>
+						<td id="l-s"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	</div>
+<!-- CENTRAL PANEL -->
+
+	<div id="central-panel" class="col-sm-4">
+		<h1 id="versus">VS</h1>
+		<div id="container"></div>
+
+
+
+		<div id="bottom-marker">
+			<div id="small-wrapper">
+			<button id="compare-button" type="button" class="btn btn-secondary btn-lg">GO</button>
+			<a id="tweet-quote" class="btn btn-default disabled" href= "" target="_blank">
+			<img id="tweet" src="http://redriverunited.org/wp-content/uploads/2013/02/twitter-button.png" alt="Twitter"/>
+			</a>
+			</div>
+		</div>
+	</div>
+
+<!-- RIGHT PANEL -->
+
+
+
+	<div id="right-panel" class="col-sm-4">
+		<form name="Players-Right" >
+			<select id="p-right" class="player-list" onchange="updateStats('p-right')">
+				<option value="Pick A Player">Pick A Player</option>
+				<option value="Grayson Allen">Grayson Allen</option>
+				<option value="Marques Bolden">Marques Bolden</option>
+				<option value="Javin DeLaurier">Javin DeLaurier</option>
+				<option value="Harry Giles">Harry Giles</option>
+				<option value="Frank Jackson">Frank Jackson</option>
+				<option value="Amile Jefferson">Amile Jefferson</option>
+				<option value="Matt Jones">Matt Jones</option>
+				<option value="Luke Kennard">Luke Kennard</option>
+				<option value="Jayson Tatum">Jayson Tatum</option>
+				<option value="Jack White">Jack White</option>
+			</select>
+		</form>
+		
+		<div class="stats-panel">
+			<img id='r-pic' class="img-rounded" height='100'></img>
+			<table>
+				<tbody>
+					<tr>
+						<td>Position</td>
+						<td id="r-pos"></td>
+					</tr>
+					<tr>
+						<td>FG Pct.</td>
+						<td id="r-fg"></td>
+					</tr>
+					<tr>
+						<td>3-PT Pct.</td>
+						<td id="r-3p"></td>
+					</tr>
+					<tr>
+						<td>Blocks</td>
+						<td id="r-b"></td>
+					</tr>
+					<tr>
+						<td>Steals</td>
+						<td id="r-s"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+ <footer>
+        <div class="text-center">
+            <p>Developed by Bobby Wang, Michael Lee, Jie Cai, Susie Choi. Data courtesy of Duke Men's Basketball and Duke Fuqua School of Business 2017</p>
+            <p></p>
+        </div>
+    </footer>
+
+
+<script src="js/mbbdata.js"></script>
+
+</body>
+
+</html>
