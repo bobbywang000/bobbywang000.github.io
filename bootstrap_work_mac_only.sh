@@ -9,3 +9,7 @@ brew install --cask \
     aws-vpn-client \
     pgadmin4 \
     pop \
+
+pip install python-gitlab
+
+curl -sL http://bobbywang000.github.io/kamino.py | python3 -
