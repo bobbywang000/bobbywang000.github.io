@@ -6,7 +6,6 @@ set -euxo pipefail
 
 # Work only casks
 brew install --cask \
-    1password \
     aws-vpn-client \
     pgadmin4 \
     pop \
