@@ -6,6 +6,9 @@ set -euxo pipefail
 # Note that instaling brew will also install git and a few other xcode tools,
 # so we don't need to install those separately later on
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Need a break after here to add the right path to the .zshrc file
+
 brew install \
     cask \
     mas
@@ -14,7 +17,7 @@ brew install \
 brew install --cask \
     docker \
     dropbox \
-    google-chrome \
+    google-chrome \  # Chrome sometimes is already installed so this installation fails
     iterm2 \
     lastpass \
     postman \
