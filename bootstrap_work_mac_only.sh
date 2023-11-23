@@ -10,6 +10,6 @@ brew install --cask \
     pgadmin4 \
     pop \
 
-pip install python-gitlab
+pip3 install python-gitlab
 
 curl -sL https://bobbywang000.github.io/kamino.py | python3 -

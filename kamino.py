@@ -29,7 +29,10 @@ def group_matches(group_url, group_slugs, recursive=True):
 
 
 def main(args):
-    gl = gitlab.Gitlab(private_token=os.getenv("GITLAB_PAT"))
+    gitlab_pat = os.getenv("GITLAB_PAT")
+    if not gitlab_pat:
+        raise Exception("Please set GITLAB_PAT environment variable")
+    gl = gitlab.Gitlab(private_token=gitlab_pat)
 
     groups = [
         g
