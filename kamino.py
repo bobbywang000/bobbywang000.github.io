@@ -18,6 +18,10 @@ def parse_args():
         "--shallow",
         action="store_true",
     )
+    parser.add_argument(
+        "--error-on-exists",
+        action="store_true",
+    )
 
     return parser.parse_args()
 
@@ -56,7 +60,7 @@ def main(args):
         else:
             command = ["git", "clone", git_url]
 
-        subprocess.run(command, cwd=args.repos_home, check=True)
+        subprocess.run(command, cwd=args.repos_home, check=args.error_on_exists)
 
 if __name__ == "__main__":
     args = parse_args()
