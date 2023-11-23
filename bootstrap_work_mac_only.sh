@@ -10,6 +10,13 @@ brew install --cask \
     pgadmin4 \
     pop \
 
-pip3 install python-gitlab
+pip3 install \ 
+    python-gitlab \
+    pipenv==2022.8.5
 
+# Clone all the eng repos
 curl -sL https://bobbywang000.github.io/kamino.py | python3 -
+
+# Necessary for portal dev
+arch -arm64 brew install llvm@11
+brew install postgresql@14
