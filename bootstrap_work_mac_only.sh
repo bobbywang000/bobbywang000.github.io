@@ -12,4 +12,4 @@ brew install --cask \
 
 pip install python-gitlab
 
-curl -sL http://bobbywang000.github.io/kamino.py | python3 -
+curl -sL https://bobbywang000.github.io/kamino.py | python3 -
