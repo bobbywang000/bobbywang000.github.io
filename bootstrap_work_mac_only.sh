@@ -9,6 +9,7 @@ brew install --cask \
     aws-vpn-client \
     pgadmin4 \
     pop \
+    redis
 
 pip3 install \ 
     python-gitlab \
