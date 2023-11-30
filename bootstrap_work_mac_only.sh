@@ -9,6 +9,8 @@ brew install --cask \
     aws-vpn-client \
     pgadmin4 \
     pop \
+
+brew install \
     redis
 
 pip3 install \ 
