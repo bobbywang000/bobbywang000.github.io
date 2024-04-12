@@ -21,7 +21,7 @@ brew install --cask \
     iterm2 \
     lastpass \
     postman \
-    spectacle \
+    rectangle \
     spotify \
     sublime-text \
     visual-studio-code \
